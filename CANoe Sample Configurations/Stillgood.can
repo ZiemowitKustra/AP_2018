@@ -1,0 +1,53 @@
+/*@!Encoding:1250*/
+includes
+{
+  
+}
+
+variables
+{
+  message 0x300 stillgood;
+  message 0x303 LightError;
+  msTimer ComunicationError;
+  msTimer LightError;
+  
+}
+
+on start
+{
+  setTimer(ComunicationError,1000);
+  setTimer(LightError,1000);
+}
+
+on message 303
+{
+  //Ustaw œwiat³a na (migaj¹ce) ¿ó³te
+}
+
+//timer ustawiany przy rozkazie zmiany œwiate³
+on timer LightError
+{
+  //if (œwiat³o danego koloru != tym co kazano)
+  {
+    //Ustaw œwiad³a na (migaj¹ce) zó³te
+    //output 303;
+  }
+}
+
+on message 300
+{
+  setTimer(ComunicationError,1);
+  output(stillgood);
+}
+
+on timer ComunicationError
+{
+  //Zamigaj œwiat³ami zó³tymi przez chwilê(np. 3 sec)
+  //nastêpnie wy³¹cz wszystkie œwiat³a
+}
+
+//psuj noda 1
+on key 'a' //'b' dla noda 2
+{
+  //psuj
+}
