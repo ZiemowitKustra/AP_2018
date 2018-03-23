@@ -1,0 +1,75 @@
+/*@!Encoding:1250*/
+includes
+{
+  
+}
+
+variables
+{
+  message 0x2 zmiana1;
+  Timer timer1;
+  Timer timer2;
+  int faza;
+  //1-czerwone 2-zolte 3-zielone
+}
+on start
+{
+  @zielone2 = 0;
+  @zolte2 = 0;
+  @czerwone2 = 1;
+  @czerwonePasy2 = 0;
+  @zielonePasy2 = 1;
+  faza = 1;
+}
+on message 1
+{
+  setTimer(timer2,2);
+}
+
+on timer timer1
+{
+  if(faza == 2)
+  {
+    faza = 1;
+    @zielone2 = 0;
+    @zolte2 = 0;
+    @czerwone2 = 1;
+    @czerwonePasy1 = 1;
+    @zielonePasy1 = 0;
+    output(zmiana1);
+  }
+  if(faza == 3)
+  {
+    faza = 2;
+    @zielone2 = 0;
+    @zolte2 = 1;
+    @czerwone2 = 0;
+    setTimer(timer1,5);
+  }
+}
+
+on timer timer2
+{
+   if(faza == 3)
+  {
+    setTimer(timer1,5);
+  }
+   if(faza == 2)
+  {
+    faza = 3;
+    @zielone2 = 1;
+    @zolte2 = 0;
+    @czerwone2 = 0;
+    @czerwonePasy1 = 0;
+    @zielonePasy1 = 1;
+    setTimer(timer2,2);
+  }
+  if(faza == 1)
+  {
+    faza = 2;
+    @zielone2 = 0;
+    @zolte2 = 1;
+    @czerwone2 = 1;
+    setTimer(timer2,3);
+  }
+}
