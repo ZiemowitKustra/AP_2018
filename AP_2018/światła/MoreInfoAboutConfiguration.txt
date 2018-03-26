@@ -1,0 +1,77 @@
+System Information
+==================
+
+
+   msvcp120.dll version:  12.0.40649.5
+   msvcp120.dll expected: 12.0.21005.1
+
+Trace Window Information:
+ Trace:
+  Prioritized data storage: Not Active
+  View buffer size: 4000
+  Current number of records: 0
+General information:
+ CANoe.ISO11783.J1939.CANopen.LIN.MOST.FlexRay.J1587.Ethernet.Car2x.AFDX.A429.Scope 
+ This product is licensed to: 
+ License number: COE1800000
+ Program version: [Build 10.0.114 (64bit)]
+Vector channel interfaces connected to User PC:
+Dll Version                             -                   
+
+Channel             Type                Driver version      
+ CAN 1                                  0.0.0               
+CANoe RT / VN8900:
+ Connection to remote runtime kernel is not configured.
+System information:
+ Operating system:   Windows 8 (64 bit)
+ Processor:          Intel(R) Core(TM) i5-6300HQ CPU @ 2.30GHz
+ Logical Processors: 4
+ Processor Cores:    4
+ Total physical memory: 8019 MB
+ Available physical memory: 2105 MB
+ Total virtual memory: 134217727 MB
+ Available virtual memory: 134215998 MB
+Threading information:
+ Maximum numbers of threads: 2
+ Flags: ParallelizeSignalAccess, ParallelizeSimStop, ParallelizeFileAccess
+Systembuffer information:
+ Swapping mode: No use of storage space, large history
+ Swapping directory: C:\Users\sylwek\AppData\Local\Temp\
+ Swapping space: 0
+Modules:
+ EXE Version: 10.0.114; [C:\Program Files\Vector CANoe 10.0\Exec64\CANoe64.exe]
+  Configuration Format Version: 4.10.0
+ CAPLCOMP.DLL Version: CAPL Compiler Version 10.0.114.0; [C:\Program Files\Vector CANoe 10.0\Exec64\CAPLcomp.dll]
+ UTSTAT.DLL Version: 08; [C:\Program Files\Vector CANoe 10.0\Exec64\utstatcn.dll]
+ J1939TestServiceLibraryNL.dll Version: J1939 Test Service Library for CANoe, Version 10.0.114.0; [C:\Program Files\Vector CANoe 10.0\Exec32\J1939TestServiceLibraryNL.dll]
+ VSysChecks.DLL Version: V100; [vsyschecks.dll       Version: 100]
+ ChipCfg.dll Version: 10.0.114.0; [C:\Program Files\Vector CANoe 10.0\Exec64\ChipCfg.dll]
+ PortLinkCfg.DLL Version: 10.0.114.0; [C:\Program Files\Vector CANoe 10.0\Exec64\PortlinkCfg.dll]
+Loaded Plugins:
+ Option CANopen Version: 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\CANopenPlugIn.vpi]
+ DiVaPlugIn Dynamic Link Library Version: 10.0.2101 [C:\Program Files\Vector CANoe 10.0\Exec64\DiVaPlugIn.vpi]
+ Vector PlugIn GNSS Monitor Version: 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\GNSSMonitor.vpi]
+ Vector PlugIn GNSS Simulator Version: 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\GNSSSimulator.vpi]
+ Vector CANalyzer.Ethernet/CANoe.Ethernet Version: 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\IPPlugIn.vpi]
+ Vector PlugIn .ISO11783 Version: 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\ISOBUSPlugIn.vpi]
+ Vector PlugIn .J1587 Version: 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\J1587PlugIn.vpi]
+ Vector PlugIn .J1939 Version: 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\J1939PlugIn.vpi]
+Loaded trace modules:
+ CANopen Safety: Version 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\CANopenSafetyHook.dll Interface: 2.2] 
+ CANopen: Version 10.0.114 [C:\Program Files\Vector CANoe 10.0\Exec64\CANopenHook.dll Interface: 2.2] 
+Installed Add-ons:
+ None
+COM Security Call Failed!
+
+
+
+Files Used
+==========
+C:\Users\sylwek\Desktop\Users\Public\Documents\Vector\CANoe\10.0 (x64)\CANoe Sample Configurations\Configuration2.cfg
+C:\Users\sylwek\Desktop\Users\Public\Documents\Vector\CANoe\10.0 (x64)\CANoe Sample Configurations\Panel1.xvp
+C:\Users\sylwek\Desktop\Users\Public\Documents\Vector\CANoe\10.0 (x64)\CANoe Sample Configurations\Panel2.xvp
+C:\Users\sylwek\Desktop\Users\Public\Documents\Vector\CANoe\10.0 (x64)\CANoe Sample Configurations\test 1.can
+C:\Users\sylwek\Desktop\Users\Public\Documents\Vector\CANoe\10.0 (x64)\CANoe Sample Configurations\test2.can
+C:\Users\sylwek\Desktop\Users\Public\Documents\Vector\CANoe\10.0 (x64)\Templates\CANoe\Data.mdf
+C:\Users\sylwek\Desktop\Users\Public\Documents\Vector\CANoe\10.0 (x64)\Templates\Database\CANoeTemplate.dbc
+

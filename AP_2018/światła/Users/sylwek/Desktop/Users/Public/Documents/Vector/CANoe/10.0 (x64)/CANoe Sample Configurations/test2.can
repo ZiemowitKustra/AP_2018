@@ -1,0 +1,239 @@
+/*@!Encoding:1250*/
+includes
+{
+  
+}
+
+variables
+{
+  message 0x2 Switch_WE_end; //informacja zwrotna o zakonczeniu przejœcia swiate³ na uk³adzie wschód-zachód
+  message 0x4 Switch_NS_end; //informacja zwrotna o zakonczeniu przejœcia swiate³ na uk³adzie wschód-zachód
+  timer przejscie;           //czas potrzebny na zmiane œwiate³ (nie zmieniaj¹ siê odrazu ten cykl trwa)
+  int cykl;
+  int faza;
+}
+on start
+{
+
+}
+on message 1
+{
+  faza=1;
+  if(@Red_W_s==0 && @Red_E_s==1)
+  {
+    cykl=1;
+    setTimer(przejscie,0);
+  }
+  if(@Red_W_s==1 && @Red_E_s==1)
+  {
+    cykl=2;
+    setTimer(przejscie,0);
+  }
+  if(@Red_W_s==1 && @Red_E_s==0)
+  {
+    cykl=3;
+    setTimer(przejscie,0);
+  }
+}
+on message 3
+{
+  faza=1;
+  if(@Red_S_s==0 && @Red_N_s==1)
+  {
+    cykl=4;
+    setTimer(przejscie,0);
+  }
+  if(@Red_S_s==1 && @Red_N_s==1)
+  {
+    cykl=5;
+    setTimer(przejscie,0);
+  }
+  if(@Red_S_s==1 && @Red_N_s==0)
+  {
+    cykl=6;
+    setTimer(przejscie,0);
+  }
+}
+on timer przejscie
+{
+  switch(cykl){
+    case 1:
+      if(faza==3)
+      {
+        @Yellow_E_p=0;
+        @Red_E_p=0;
+        @Green_E_p=1;
+        output(Switch_WE_end);
+        break;
+      }
+      if(faza==2)
+      {
+        @Yellow_E_p=1;
+        @Yellow_W_s=0;
+        @Red_W_s=1;
+        faza=3;
+        setTimer(przejscie,1);
+      }
+      if(faza==1)
+      {
+        @Green_W_s=0;
+        @Yellow_W_s=1;
+        faza=2;
+        setTimer(przejscie,1);
+      }
+      break;
+    case 2:
+      if(faza==3)
+      {
+        @Yellow_E_s=0;
+        @Red_E_s=0;
+        @Green_E_s=1;
+        output(Switch_WE_end);
+        break;
+      }
+      if(faza==2)
+      {
+        @Yellow_E_s=1;
+        @Yellow_W_p=0;
+        @Red_W_p=1;
+        faza=3;
+        setTimer(przejscie,1);
+      }
+      if(faza==1)
+      {
+        @Green_W_p=0;
+        @Yellow_W_p=1;
+        faza=2;
+        setTimer(przejscie,1);
+      }
+      break;
+    case 3:
+      if(faza==4)
+      {
+        @Yellow_S_p=0;
+        @Red_S_p=0;
+        @Yellow_S_s=0;
+        @Red_S_s=0;
+        @Green_S_p=1;
+        @Green_S_s=1;
+        output(Switch_NS_end);
+        break;
+      }
+      if(faza==3)
+      {
+        @Yellow_S_s=1;
+        @Yellow_S_p=1;
+        faza=4;
+        setTimer(przejscie,1);
+      }
+      if(faza==2)
+      {
+        @Yellow_E_s=0;
+        @Red_E_s=1;
+        @Yellow_E_p=0;
+        @Red_E_p=1;
+        faza=3;
+        setTimer(przejscie,1);
+      }
+      if(faza==1)
+      {
+        @Green_E_s=0;
+        @Yellow_E_s=1;
+        @Green_E_p=0;
+        @Yellow_E_p=1;
+        faza=2;
+        setTimer(przejscie,1);
+      }
+      break;
+    case 4:
+      if(faza==3)
+      {
+        @Yellow_N_p=0;
+        @Red_N_p=0;
+        @Green_N_p=1;
+        output(Switch_NS_end);
+        break;
+      }
+      if(faza==2)
+      {
+        @Yellow_N_p=1;
+        @Yellow_S_s=0;
+        @Red_S_s=1;
+        faza=3;
+        setTimer(przejscie,1);
+      }
+      if(faza==1)
+      {
+        @Green_S_s=0;
+        @Yellow_S_s=1;
+        faza=2;
+        setTimer(przejscie,1);
+      }
+      break;
+    case 5:
+      if(faza==3)
+      {
+        @Yellow_N_s=0;
+        @Red_N_s=0;
+        @Green_N_s=1;
+        output(Switch_NS_end);
+        break;
+      }
+      if(faza==2)
+      {
+        @Yellow_N_s=1;
+        @Yellow_S_p=0;
+        @Red_S_p=1;
+        faza=3;
+        setTimer(przejscie,1);
+      }
+      if(faza==1)
+      {
+        @Green_S_p=0;
+        @Yellow_S_p=1;
+        faza=2;
+        setTimer(przejscie,1);
+      }
+      break;
+    case 6:
+      if(faza==4)
+      {
+        @Yellow_W_p=0;
+        @Red_W_p=0;
+        @Yellow_W_s=0;
+        @Red_W_s=0;
+        @Green_W_p=1;
+        @Green_W_s=1;
+        output(Switch_WE_end);
+        break;
+      }
+      if(faza==3)
+      {
+        @Yellow_W_s=1;
+        @Yellow_W_p=1;
+        faza=4;
+        setTimer(przejscie,1);
+      }
+      if(faza==2)
+      {
+        @Yellow_N_s=0;
+        @Red_N_s=1;
+        @Yellow_N_p=0;
+        @Red_N_p=1;
+        faza=3;
+        setTimer(przejscie,1);
+      }
+      if(faza==1)
+      {
+        @Green_N_s=0;
+        @Yellow_N_s=1;
+        @Green_N_p=0;
+        @Yellow_N_p=1;
+        faza=2;
+        setTimer(przejscie,1);
+      }
+      break;
+      default:
+        break;
+  }
+}
