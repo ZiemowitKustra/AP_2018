@@ -11,13 +11,72 @@ variables
   timer przejscie;           //czas potrzebny na zmiane œwiate³ (nie zmieniaj¹ siê odrazu ten cykl trwa)
   int cykl;
   int faza;
+  message 0x10 stillgood;
+  msTimer ComunicationError;
 }
+
 on start
 {
-
+  setTimer(ComunicationError,1000);
 }
+
+on message 17
+{
+  if(@Dziala_2==1){
+  setTimer(ComunicationError,10);
+  output(stillgood);
+  write("17");
+  }
+}
+
+on timer ComunicationError
+{
+  if(@Dziala_2==1){
+    @Red_P_E=0;
+    @Red_P_W=0;
+    @Red_E_p=0;
+    @Red_E_s=0;
+    @Red_W_p=0;
+    @Red_W_s=0;
+    @Yellow_E_p=0;
+    @Yellow_E_s=0;
+    @Yellow_W_p=0;
+    @Yellow_W_s=0;
+    @Green_E_p=0;
+    @Green_E_s=0;
+    @Green_W_p=0;
+    @Green_W_s=0;
+    @Dziala_2=0;
+  write("Wy³¹czam noda 2");
+}}
+
+//psuj noda 2
+on key 'b'
+{
+  @Dziala_2=0;
+  //brak³o zasilania równie¿ w jego œwiat³ach
+    @Red_P_E=0;
+    @Red_P_W=0;
+    @Red_E_p=0;
+    @Red_E_s=0;
+    @Red_W_p=0;
+    @Red_W_s=0;
+    @Yellow_E_p=0;
+    @Yellow_E_s=0;
+    @Yellow_W_p=0;
+    @Yellow_W_s=0;
+    @Green_E_p=0;
+    @Green_E_s=0;
+    @Green_W_p=0;
+    @Green_W_s=0;
+  write("node 2 wylecia³ w powietrze");
+  //ILNodeControlStop(M); //Wy³¹cza danego noda (M to nazwa mojego noda)
+  //Niestety nie mam pojêcia jak to dzia³a :(
+}
+
 on message 1
 {
+  if (@Dziala_2==1){
   faza=1;
   if(@Red_W_s==0 && @Red_E_s==1)
   {
@@ -34,9 +93,11 @@ on message 1
     cykl=3;
     setTimer(przejscie,0);
   }
-}
+}}
+  
 on message 3
 {
+  if (@Dziala_2==1){
   faza=1;
   if(@Red_S_s==0 && @Red_N_s==1)
   {
@@ -53,9 +114,11 @@ on message 3
     cykl=6;
     setTimer(przejscie,0);
   }
-}
+}}
+
 on timer przejscie
 {
+  if (@Dziala_2==1){
   switch(cykl){
     case 1:
       if(faza==3)
@@ -236,4 +299,4 @@ on timer przejscie
       default:
         break;
   }
-}
+}}
