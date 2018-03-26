@@ -6,24 +6,20 @@ includes
 
 variables
 {
-  message 0x11 stillgood={dlc=1};
-  message 0x13 LightError;
+  message 0x10 stillgood;
+  message 0x12 LightError;
   msTimer ComunicationError;
   msTimer Light_Error;
-  byte dziala;
-  
+  byte dziala=1;
 }
 
 on start
 {
-  dziala=1;
   setTimer(ComunicationError,1000);
-//  setTimer(Light_Error,1000);
-  output(stillgood);
-  write("Poszlo still good");
+  setTimer(Light_Error,1000);
 }
 
-on message 18
+on message 19
 {
   //Ustaw œwiat³a na (migaj¹ce) ¿ó³te
 }
@@ -38,25 +34,26 @@ on timer Light_Error
   }
 }
 
-on message 16
+on message 17
 {
   if(dziala==1){
-  write("Przyszlo");
   setTimer(ComunicationError,10);
   output(stillgood);
-  write("300");
+  write("300a");
   }
 }
 
 on timer ComunicationError
 {
   if(dziala==1)
-  write("Wy³¹czam noda 1");
+  write("Wy³¹czam noda 2");
 }
 
-//psuj noda 1
-on key 'a'
+//psuj noda 2
+on key 'b'
 {
   dziala=0;
-  write("Node 1 wylecia³ w powietrze");
+  write("node 2 wylecia³ w powietrze");
+  //ILNodeControlStop(M); //Wy³¹cza danego noda (M to nazwa mojego noda)
+  //Niestety nie mam pojêcia jak to dzia³a :(
 }
