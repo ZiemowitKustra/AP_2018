@@ -39,7 +39,7 @@ on message 17
   if(dziala==1){
   setTimer(ComunicationError,10);
   output(stillgood);
-  write("300a");
+  write("17");
   }
 }
 

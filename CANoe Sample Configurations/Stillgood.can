@@ -44,7 +44,7 @@ on message 16
   write("Przyszlo");
   setTimer(ComunicationError,10);
   output(stillgood);
-  write("300");
+  write("16");
   }
 }
 
