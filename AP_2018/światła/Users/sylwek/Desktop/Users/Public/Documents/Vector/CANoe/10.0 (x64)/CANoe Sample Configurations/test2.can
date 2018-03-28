@@ -126,6 +126,8 @@ on timer przejscie
         @Yellow_E_p=0;
         @Red_E_p=0;
         @Green_E_p=1;
+        @Red_P_N=0;
+        @Green_P_N=1;
         output(Switch_WE_end);
         break;
       }
@@ -151,6 +153,8 @@ on timer przejscie
         @Yellow_E_s=0;
         @Red_E_s=0;
         @Green_E_s=1;
+        @Green_P_S=0;
+        @Red_P_S=1;
         output(Switch_WE_end);
         break;
       }
@@ -173,6 +177,10 @@ on timer przejscie
     case 3:
       if(faza==4)
       {
+        @Green_P_N=0;
+        @Red_P_N=1;
+        @Red_P_E=0;
+        @Green_P_E=1;
         @Yellow_S_p=0;
         @Red_S_p=0;
         @Yellow_S_s=0;
@@ -211,6 +219,8 @@ on timer przejscie
     case 4:
       if(faza==3)
       {
+        @Red_P_W=0;
+        @Green_P_W=1;
         @Yellow_N_p=0;
         @Red_N_p=0;
         @Green_N_p=1;
@@ -236,6 +246,8 @@ on timer przejscie
     case 5:
       if(faza==3)
       {
+        @Green_P_E=0;
+        @Red_P_E=1;
         @Yellow_N_s=0;
         @Red_N_s=0;
         @Green_N_s=1;
@@ -261,6 +273,10 @@ on timer przejscie
     case 6:
       if(faza==4)
       {
+        @Green_P_W=0;
+        @Red_P_W=1;
+        @Red_P_S=0;
+        @Green_P_S=1;
         @Yellow_W_p=0;
         @Red_W_p=0;
         @Yellow_W_s=0;

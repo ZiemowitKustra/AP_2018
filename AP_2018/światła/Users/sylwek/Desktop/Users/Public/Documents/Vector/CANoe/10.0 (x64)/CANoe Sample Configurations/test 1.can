@@ -12,6 +12,10 @@ variables
   int faza;
   message 0x11 stillgood;
   msTimer ComunicationError;
+  float stan_W;
+  float stan_S;
+  float stan_N;
+  float stan_E;
 }               
 
 on start
@@ -20,6 +24,10 @@ on start
   @Natezenie_N=1;
   @Natezenie_E=1;
   @Natezenie_W=1;
+  stan_S=@Natezenie_S;
+  stan_N=@Natezenie_N;
+  stan_E=@Natezenie_E;
+  stan_W=@Natezenie_W;
   faza=1;
   setTimer(trwanie,2*@Natezenie_S);
   setTimer(ComunicationError,1000);
@@ -84,19 +92,39 @@ on message 2
   if(@Dziala_1==1){
   if(@Red_W_s==0 && @Red_E_s==1) //jedzie tylko zachód (wsyzstkie kierunki)
   {
+    if((@Buttom_W==1 || @Buttom_E==1) && stan_W==@Natezenie_W)
+     {
+       stan_W=stan_W/1.5;
+     }
     faza=1;
-    setTimer(trwanie,2*@Natezenie_W);
+    setTimer(trwanie,2*stan_W);
   }
   if(@Red_W_s==1 && @Red_E_s==1) //jad¹ prosto i wschód i zachód (tylko prosto)
   {
+     if((@Buttom_W==1 || @Buttom_E==1) && stan_W==@Natezenie_W)
+     {
+       stan_W=stan_W/1.5;
+     }
+    if((@Buttom_W==1 || @Buttom_E==1) && stan_E==@Natezenie_E)
+     {
+       stan_E=stan_E/1.5;
+     }
     faza=1;
-    if(@Natezenie_W>=@Natezenie_E)    setTimer(trwanie,3*@Natezenie_W);
-    else     setTimer(trwanie,3*@Natezenie_E);
+    if(stan_W>=stan_E)    setTimer(trwanie,3*stan_W);
+    else     setTimer(trwanie,3*stan_E);
   }
   if(@Red_W_s==1 && @Red_E_s==0) //jedzie tylko wschód (wszystkie kierunki)
   {
+    if((@Buttom_W==1 || @Buttom_E==1) && stan_E==@Natezenie_E)
+     {
+       stan_E=stan_E/1.5;
+     }
     faza=1;
-    setTimer(trwanie,2*@Natezenie_E);
+    setTimer(trwanie,2*stan_E);
+    stan_E=@Natezenie_E;
+    stan_W=@Natezenie_W;
+    @Buttom_W==0;
+    @Buttom_E==0;
   }
 }}
 
@@ -105,19 +133,39 @@ on message 4                    //takie samo rozwi¹zanie jak dla wschód-zachód
   if(@Dziala_1==1){
   if(@Red_S_s==0 && @Red_N_s==1)
   {
+    if((@Buttom_S==1 || @Buttom_N==1) && stan_S==@Natezenie_S)
+     {
+       stan_S=stan_S/1.5;
+     }
     faza=2;
-    setTimer(trwanie,2*@Natezenie_S);
+    setTimer(trwanie,2*stan_S);
   }
   if(@Red_S_s==1 && @Red_N_s==1)
   {
+    if((@Buttom_S==1 || @Buttom_N==1) && stan_S==@Natezenie_S)
+     {
+       stan_S=stan_S/1.5;
+     }
+    if((@Buttom_S==1 || @Buttom_N==1) && stan_N==@Natezenie_N)
+     {
+       stan_N=stan_N/1.5;
+     }
     faza=2;
-    if(@Natezenie_S>=@Natezenie_N)    setTimer(trwanie,3*@Natezenie_S);
-    else setTimer(trwanie,3*@Natezenie_N);
+    if(stan_S>=stan_N)    setTimer(trwanie,3*stan_S);
+    else setTimer(trwanie,3*stan_N);
   }
   if(@Red_S_s==1 && @Red_N_s==0)
   {
+     if((@Buttom_S==1 || @Buttom_N==1) && stan_N==@Natezenie_N)
+     {
+       stan_N=stan_N/1.5;
+     }
     faza=2;
-    setTimer(trwanie,2*@Natezenie_N);
+    setTimer(trwanie,2*stan_N);
+    stan_N=@Natezenie_N;
+    stan_S=@Natezenie_S;
+    @Buttom_S==0;
+    @Buttom_N==0;
   }
 }}
 
