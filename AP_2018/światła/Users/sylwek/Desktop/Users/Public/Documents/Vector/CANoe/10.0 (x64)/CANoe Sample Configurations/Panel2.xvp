@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Panel1">
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl37" ControlName="LED Control">
+      <Property Name="Name">LEDControl37</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">104, 542</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwonePasy2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">59</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl38" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl38</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">104, 571</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielonePasy2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">58</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl41" ControlName="LED Control">
+      <Property Name="Name">LEDControl41</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">161, 193</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwonePasy2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">57</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl42" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl42</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">161, 164</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielonePasy2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">56</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl53" ControlName="LED Control">
+      <Property Name="Name">LEDControl53</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">565, 647</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwonePasy1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">55</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl54" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl54</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">593, 647</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielonePasy1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">54</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl55" ControlName="LED Control">
+      <Property Name="Name">LEDControl55</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">244, 587</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwonePasy1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">53</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl56" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl56</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">217, 587</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielonePasy1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">52</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl51" ControlName="LED Control">
+      <Property Name="Name">LEDControl51</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">593, 496</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwonePasy2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">51</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl52" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl52</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">593, 526</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielonePasy2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">50</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl47" ControlName="LED Control">
+      <Property Name="Name">LEDControl47</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">636, 193</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwonePasy2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">47</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl48" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl48</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">636, 164</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielonePasy2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">46</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl43" ControlName="LED Control">
+      <Property Name="Name">LEDControl43</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">538, 150</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwonePasy1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">43</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl44" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl44</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">565, 150</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielonePasy1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">42</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl39" ControlName="LED Control">
+      <Property Name="Name">LEDControl39</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">199, 110</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwonePasy1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">39</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl40" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl40</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">172, 110</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielonePasy1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">38</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl34" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl34</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">244, 420</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">35</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl35" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl35</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">217, 420</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">34</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl36" ControlName="LED Control">
+      <Property Name="Name">LEDControl36</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">190, 420</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">33</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl31" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl31</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">244, 471</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">32</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl32" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl32</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">217, 471</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">31</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl33" ControlName="LED Control">
+      <Property Name="Name">LEDControl33</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">190, 471</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">30</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl28" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl28</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">509, 496</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">29</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl29" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl29</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">509, 525</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">28</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl30" ControlName="LED Control">
+      <Property Name="Name">LEDControl30</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">509, 555</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">27</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl25" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl25</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">425, 496</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">26</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl26" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl26</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">425, 525</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">25</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl27" ControlName="LED Control">
+      <Property Name="Name">LEDControl27</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">425, 555</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">24</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl22" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl22</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">272, 253</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">23</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl23" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl23</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">272, 223</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">22</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl24" ControlName="LED Control">
+      <Property Name="Name">LEDControl24</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">272, 193</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">21</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl19" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl19</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">226, 253</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">20</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl20" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl20</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">226, 223</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">19</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl21" ControlName="LED Control">
+      <Property Name="Name">LEDControl21</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">226, 193</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">18</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl16" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl16</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">493, 283</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">17</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl17" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl17</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">519, 283</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">16</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl18" ControlName="LED Control">
+      <Property Name="Name">LEDControl18</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">545, 283</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">15</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl13" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl13</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">493, 327</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">14</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl14" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl14</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">519, 327</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">13</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl15" ControlName="LED Control">
+      <Property Name="Name">LEDControl15</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">545, 327</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">12</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl10" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl10</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">244, 517</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">11</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl11" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl11</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">217, 517</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">10</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl12" ControlName="LED Control">
+      <Property Name="Name">LEDControl12</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">190, 517</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">9</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl7" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl7</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">492, 238</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">8</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl8" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl8</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">518, 238</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">7</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl9" ControlName="LED Control">
+      <Property Name="Name">LEDControl9</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">545, 238</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone2;1;;;-1;;;</Property>
+      <Property Name="TabIndex">6</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl4" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl4</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">468, 496</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">5</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl5" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl5</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">468, 525</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">4</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl6" ControlName="LED Control">
+      <Property Name="Name">LEDControl6</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">468, 555</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">3</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl3" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl3</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">317, 253</Property>
+      <Property Name="UsedLEDColorOn">Green</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zielone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl2" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl2</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">317, 223</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;zolte1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.125.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl1" ControlName="LED Control">
+      <Property Name="Name">LEDControl1</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">317, 193</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;1;CANoeTemplate;;;czerwone1;1;;;-1;;;</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">756, 771</Property>
+    <Property Name="BackColor">White</Property>
+    <Property Name="ImageFileName">skrzyzowanie-makieta.jpg</Property>
+    <Property Name="IsProportional">True</Property>
+  </Object>
+</Panel>
