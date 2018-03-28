@@ -1,0 +1,183 @@
+/*@!Encoding:1250*/
+includes
+{
+  
+}
+
+variables
+{
+  message 0x1 Switch_WE;  //wysy³anie wiadomoœci o zmianie œwiate³ dla wschód-zachód
+  message 0x3 Switch_NS;  //wysy³anie wiadomoœci o zmianie œwiate³ dla pó³noc-po³ódnie
+  timer trwanie;//timer dotycz¹cy trwania fazy zanim dojdzie do zmiany œwiate³
+  int faza;
+  message 0x11 stillgood;
+  msTimer ComunicationError;
+  float stan_W;
+  float stan_S;
+  float stan_N;
+  float stan_E;
+}               
+
+on start
+{
+  @Natezenie_S=1;
+  @Natezenie_N=1;
+  @Natezenie_E=1;
+  @Natezenie_W=1;
+  stan_S=@Natezenie_S;
+  stan_N=@Natezenie_N;
+  stan_E=@Natezenie_E;
+  stan_W=@Natezenie_W;
+  faza=1;
+  setTimer(trwanie,2*@Natezenie_S);
+  setTimer(ComunicationError,1000);
+  output(stillgood);
+  write("Poszlo still good");
+}
+
+on message 16
+{
+  if(@Dziala_1==1){
+  setTimer(ComunicationError,10);
+  output(stillgood);
+  write("16");
+  }
+}
+
+on timer ComunicationError
+{
+  if(@Dziala_1==1){
+    @Red_P_N=0;
+    @Red_P_S=0;
+    @Red_S_p=0;
+    @Red_S_s=0;
+    @Red_N_p=0;
+    @Red_N_s=0;
+    @Yellow_S_p=0;
+    @Yellow_S_s=0;
+    @Yellow_N_p=0;
+    @Yellow_N_s=0;
+    @Green_S_p=0;
+    @Green_S_s=0;
+    @Green_N_p=0;
+    @Green_N_s=0;
+    @Dziala_1=0;
+  write("Wy³¹czam noda 1");
+}}
+
+//psuj noda 1
+on key 'a'
+{
+  @Dziala_1=0;
+  //brak zasilania równie¿ w œwiat³ach
+    @Red_P_N=0;
+    @Red_P_S=0;
+    @Red_S_p=0;
+    @Red_S_s=0;
+    @Red_N_p=0;
+    @Red_N_s=0;
+    @Yellow_S_p=0;
+    @Yellow_S_s=0;
+    @Yellow_N_p=0;
+    @Yellow_N_s=0;
+    @Green_S_p=0;
+    @Green_S_s=0;
+    @Green_N_p=0;
+    @Green_N_s=0;
+  write("Node 1 wylecia³ w powietrze");
+}
+
+on message 2
+{
+  if(@Dziala_1==1){
+  if(@Red_W_s==0 && @Red_E_s==1) //jedzie tylko zachód (wsyzstkie kierunki)
+  {
+    if((@Buttom_W==1 || @Buttom_E==1) && stan_W==@Natezenie_W)
+     {
+       stan_W=stan_W/1.5;
+     }
+    faza=1;
+    setTimer(trwanie,2*stan_W);
+  }
+  if(@Red_W_s==1 && @Red_E_s==1) //jad¹ prosto i wschód i zachód (tylko prosto)
+  {
+     if((@Buttom_W==1 || @Buttom_E==1) && stan_W==@Natezenie_W)
+     {
+       stan_W=stan_W/1.5;
+     }
+    if((@Buttom_W==1 || @Buttom_E==1) && stan_E==@Natezenie_E)
+     {
+       stan_E=stan_E/1.5;
+     }
+    faza=1;
+    if(stan_W>=stan_E)    setTimer(trwanie,3*stan_W);
+    else     setTimer(trwanie,3*stan_E);
+  }
+  if(@Red_W_s==1 && @Red_E_s==0) //jedzie tylko wschód (wszystkie kierunki)
+  {
+    if((@Buttom_W==1 || @Buttom_E==1) && stan_E==@Natezenie_E)
+     {
+       stan_E=stan_E/1.5;
+     }
+    faza=1;
+    setTimer(trwanie,2*stan_E);
+    stan_E=@Natezenie_E;
+    stan_W=@Natezenie_W;
+    @Buttom_W==0;
+    @Buttom_E==0;
+  }
+}}
+
+on message 4                    //takie samo rozwi¹zanie jak dla wschód-zachód
+{
+  if(@Dziala_1==1){
+  if(@Red_S_s==0 && @Red_N_s==1)
+  {
+    if((@Buttom_S==1 || @Buttom_N==1) && stan_S==@Natezenie_S)
+     {
+       stan_S=stan_S/1.5;
+     }
+    faza=2;
+    setTimer(trwanie,2*stan_S);
+  }
+  if(@Red_S_s==1 && @Red_N_s==1)
+  {
+    if((@Buttom_S==1 || @Buttom_N==1) && stan_S==@Natezenie_S)
+     {
+       stan_S=stan_S/1.5;
+     }
+    if((@Buttom_S==1 || @Buttom_N==1) && stan_N==@Natezenie_N)
+     {
+       stan_N=stan_N/1.5;
+     }
+    faza=2;
+    if(stan_S>=stan_N)    setTimer(trwanie,3*stan_S);
+    else setTimer(trwanie,3*stan_N);
+  }
+  if(@Red_S_s==1 && @Red_N_s==0)
+  {
+     if((@Buttom_S==1 || @Buttom_N==1) && stan_N==@Natezenie_N)
+     {
+       stan_N=stan_N/1.5;
+     }
+    faza=2;
+    setTimer(trwanie,2*stan_N);
+    stan_N=@Natezenie_N;
+    stan_S=@Natezenie_S;
+    @Buttom_S==0;
+    @Buttom_N==0;
+  }
+}}
+
+on timer trwanie
+{
+  if(@Dziala_1==1){
+   switch(faza){
+    case 1:
+      output(Switch_WE);
+      break;
+    case 2:
+      output(Switch_NS);
+      break;
+  }
+}}
